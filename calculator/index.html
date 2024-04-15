@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="col-md-3">
+        <h2 class="text-center">Simple Calculator</h2>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-3">
+        <div class="form-group">
+          <label for="num1">Number 1</label>
+          <input type="text" id="num1" class="form-control" placeholder="Enter number 1">
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label for="operation">Operation</label>
+          <select id="operation" class="form-control">
+            <option value="add">Addition (+)</option>
+            <option value="subtract">Subtraction (-)</option>
+            <option value="multiply">Multiplication (*)</option>
+            <option value="divide">Division (/)</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label for="num2">Number 2</label>
+          <input type="text" id="num2" class="form-control" placeholder="Enter number 2">
+        </div>
+      </div>
+      
+      <div class="col-md-5">
+        <button id="calculateBtn" class="btn btn-primary btn-block mt-3">Calculate</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-9 offset-md-3 mt-3">
+        <div id="result"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
